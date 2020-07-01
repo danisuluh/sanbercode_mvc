@@ -14,13 +14,15 @@
   </div>
 
   <!--Form Pendaftaran Sanbercode-->
-  <form action="../masuk.blade.php">
+  <form action="/masuk" method="POST">
+    @csrf
+
     <!--Untuk isian karakter terbatas seperti nama, menggunakan input type text-->
     <!--label digunakan untuk memberi nama form input text nya, dan dihubungkand for pada label ke id pada input-->
     <label for="first_name">First Name:</label><br><br>
-    <input type="text" placeholder="First Name" value="" name="" id="first_name"><br><br>
+    <input type="text" placeholder="First Name" value="" name="first_name" id="first_name"><br><br>
     <label for="last_name">Last Name:</label><br><br>
-    <input type="text" placeholder="Last Name" value="" name="" id="last_name">
+    <input type="text" placeholder="Last Name" value="" name="last_name" id="last_name">
 
     <br><br>
     <!--Menggunakan radio untuk membuat pilihan hanya 1 buah-->

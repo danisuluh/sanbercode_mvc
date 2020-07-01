@@ -9,9 +9,11 @@
 
 <body>
   <div class="selamatbergabung">
-    <h1>SELAMAT DATANG!</h1>
+    <h1>SELAMAT DATANG <?php echo $first_name . ' ' . $last_name . ' !'; ?></h1>
 
     <h2>Terimakasih telah bergabung di Sanberbook, Social Media Kita Bersama!</h2>
+
+
   </div>
 
 </body>
